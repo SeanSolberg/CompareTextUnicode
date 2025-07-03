@@ -93,7 +93,8 @@ var
     wf('');
     wf('function CompareTextUnicode(const S1, S2: string): Integer;');
     wf('var');
-    wf('  I, Last, L1, L2: cardinal;');
+    wf('  I, Last: cardinal;');
+    wf('  L1, L2: Integer;');
     wf('  Ch1, Ch2, lPairedCh: word;');
     wf('  lIndex: byte;');
     wf('begin');

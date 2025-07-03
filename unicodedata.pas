@@ -3,7 +3,7 @@ unit unicodeData;
 (* This file was produced by UnicodeDataProcessor.exe which is an application that reads the unicodeData.txt produced by
    The Unicode Consortium.  See http://www.unicode.org.
    Specifically, the file we are reading is from https://www.unicode.org/Public/UCD/latest/ucd/UnicodeData.txt
-   Generated on 7/3/2025 4:50:27 PM
+   Generated on 7/3/2025 5:12:20 PM
 
    The code that produces this file can be found at:  https://github.com/SeanSolberg/CompareTextUnicode
 *)
@@ -455,7 +455,8 @@ const
 
 function CompareTextUnicode(const S1, S2: string): Integer;
 var
-  I, Last, L1, L2: cardinal;
+  I, Last: cardinal;
+  L1, L2: Integer;
   Ch1, Ch2, lPairedCh: word;
   lIndex: byte;
 begin
