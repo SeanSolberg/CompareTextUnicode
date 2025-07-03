@@ -10,11 +10,9 @@ object Form34: TForm34
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
   DesignSize = (
     642
     306)
-  PixelsPerInch = 96
   TextHeight = 13
   object Memo1: TMemo
     Left = 8
@@ -25,8 +23,8 @@ object Form34: TForm34
     ScrollBars = ssBoth
     TabOrder = 0
     WordWrap = False
-    ExplicitWidth = 619
-    ExplicitHeight = 252
+    ExplicitWidth = 624
+    ExplicitHeight = 251
   end
   object btnGO: TButton
     Left = 8

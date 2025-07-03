@@ -89,7 +89,8 @@ var
     wf('');
     wf('{This function uses the page index and the two pairing tables above to perform');
     wf(' a case insensitive comparison between two unicode strings because the standard System.SysUtils.CompareText');
-    wf(' function only considers the basic ascii characters and not all of the unicode characters that should.');
+    wf(' function only considers the basic ascii characters and not all of the unicode characters that it should.}');
+    wf('');
     wf('function CompareTextUnicode(const S1, S2: string): Integer;');
     wf('var');
     wf('  I, Last, L1, L2: cardinal;');
@@ -167,6 +168,36 @@ var
     wf('');
 
   end;
+
+  procedure ProduceLicenseText;
+  begin
+    wf('{********************************************************************************}');
+    wf('{                                                                                }');
+    wf('{ MIT License                                                                    }');
+    wf('{                                                                                }');
+    wf('{ Copyright (c) 2022 Sean Solberg                                                }');
+    wf('{                                                                                }');
+    wf('{ Permission is hereby granted, free of charge, to any person obtaining a copy   }');
+    wf('{ of this software and associated documentation files (the "Software"), to deal  }');
+    wf('{ in the Software without restriction, including without limitation the rights   }');
+    wf('{ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell      }');
+    wf('{ copies of the Software, and to permit persons to whom the Software is          }');
+    wf('{ furnished to do so, subject to the following conditions:                       }');
+    wf('{                                                                                }');
+    wf('{ The above copyright notice and this permission notice shall be included in all }');
+    wf('{ copies or substantial portions of the Software.                                }');
+    wf('{                                                                                }');
+    wf('{ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR     }');
+    wf('{ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,       }');
+    wf('{ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE    }');
+    wf('{ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER         }');
+    wf('{ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  }');
+    wf('{ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE  }');
+    wf('{ SOFTWARE.                                                                      }');
+    wf('{                                                                                }');
+    wf('{********************************************************************************}');
+  end;
+
 
   function AlreadyExists(aStr: string): boolean;
   begin
@@ -409,7 +440,12 @@ begin
     wf('   The Unicode Consortium.  See http://www.unicode.org.');
     wf('   Specifically, the file we are reading is from https://www.unicode.org/Public/UCD/latest/ucd/UnicodeData.txt');
     wf('   Generated on '+DateTimeToStr(now));
+    wf('');
+    wf('   The code that produces this file can be found at:  https://github.com/SeanSolberg/CompareTextUnicode');
     wf('*)');
+    wf('');
+    ProduceLicenseText;
+    wf('');
 
     wf('interface');
 

@@ -3,8 +3,37 @@ unit unicodeData;
 (* This file was produced by UnicodeDataProcessor.exe which is an application that reads the unicodeData.txt produced by
    The Unicode Consortium.  See http://www.unicode.org.
    Specifically, the file we are reading is from https://www.unicode.org/Public/UCD/latest/ucd/UnicodeData.txt
-   Generated on 6/9/2019 10:14:47 PM
+   Generated on 7/3/2025 4:50:27 PM
+
+   The code that produces this file can be found at:  https://github.com/SeanSolberg/CompareTextUnicode
 *)
+
+{********************************************************************************}
+{                                                                                }
+{ MIT License                                                                    }
+{                                                                                }
+{ Copyright (c) 2022 Sean Solberg                                                }
+{                                                                                }
+{ Permission is hereby granted, free of charge, to any person obtaining a copy   }
+{ of this software and associated documentation files (the "Software"), to deal  }
+{ in the Software without restriction, including without limitation the rights   }
+{ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell      }
+{ copies of the Software, and to permit persons to whom the Software is          }
+{ furnished to do so, subject to the following conditions:                       }
+{                                                                                }
+{ The above copyright notice and this permission notice shall be included in all }
+{ copies or substantial portions of the Software.                                }
+{                                                                                }
+{ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR     }
+{ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,       }
+{ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE    }
+{ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER         }
+{ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  }
+{ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE  }
+{ SOFTWARE.                                                                      }
+{                                                                                }
+{********************************************************************************}
+
 interface
 
 
@@ -62,7 +91,7 @@ const
      $0161,$0160,$0163,$0162,$0165,$0164,$0167,$0166,$0169,$0168,$016B,$016A,$016D,$016C,$016F,$016E,
      $0171,$0170,$0173,$0172,$0175,$0174,$0177,$0176,$00FF,$017A,$0179,$017C,$017B,$017E,$017D,$0053,
      $0243,$0253,$0183,$0182,$0185,$0184,$0254,$0188,$0187,$0256,$0257,$018C,$018B,$0000,$01DD,$0259,
-     $025B,$0192,$0191,$0260,$0263,$01F6,$0269,$0268,$0199,$0198,$023D,$0000,$026F,$0272,$0220,$0275,
+     $025B,$0192,$0191,$0260,$0263,$01F6,$0269,$0268,$0199,$0198,$023D,$A7DC,$026F,$0272,$0220,$0275,
      $01A1,$01A0,$01A3,$01A2,$01A5,$01A4,$0280,$01A8,$01A7,$0283,$0000,$0000,$01AD,$01AC,$0288,$01B0,
      $01AF,$028A,$028B,$01B4,$01B3,$01B6,$01B5,$0292,$01B9,$01B8,$0000,$0000,$01BD,$01BC,$0000,$01F7,
      $0000,$0000,$0000,$0000,$01C6,$01C4,$01C4,$01C9,$01C7,$01C7,$01CC,$01CA,$01CA,$01CE,$01CD,$01D0,
@@ -76,7 +105,7 @@ const
      $0231,$0230,$0233,$0232,$0000,$0000,$0000,$0000,$0000,$0000,$2C65,$023C,$023B,$019A,$2C66,$2C7E,
      $2C7F,$0242,$0241,$0180,$0289,$028C,$0247,$0246,$0249,$0248,$024B,$024A,$024D,$024C,$024F,$024E,
      $2C6F,$2C6D,$2C70,$0181,$0186,$0000,$0189,$018A,$0000,$018F,$0000,$0190,$A7AB,$0000,$0000,$0000,
-     $0193,$A7AC,$0000,$0194,$0000,$A78D,$A7AA,$0000,$0197,$0196,$A7AE,$2C62,$A7AD,$0000,$0000,$019C,
+     $0193,$A7AC,$0000,$0194,$A7CB,$A78D,$A7AA,$0000,$0197,$0196,$A7AE,$2C62,$A7AD,$0000,$0000,$019C,
      $0000,$2C6E,$019D,$0000,$0000,$019F,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$2C64,$0000,$0000,
      $01A6,$0000,$A7C5,$01A9,$0000,$0000,$0000,$A7B1,$01AE,$0244,$01B1,$01B2,$0245,$0000,$0000,$0000,
      $0000,$0000,$01B7,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$A7B2,$A7B0,$0000,
@@ -180,7 +209,7 @@ const
      $0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,
      $0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,
      $0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,
-     $0412,$0414,$041E,$0421,$0422,$0422,$042A,$0462,$A64A,$0000,$0000,$0000,$0000,$0000,$0000,$0000,
+     $0412,$0414,$041E,$0421,$0422,$0422,$042A,$0462,$A64A,$1C8A,$1C89,$0000,$0000,$0000,$0000,$0000,
      $10D0,$10D1,$10D2,$10D3,$10D4,$10D5,$10D6,$10D7,$10D8,$10D9,$10DA,$10DB,$10DC,$10DD,$10DE,$10DF,
      $10E0,$10E1,$10E2,$10E3,$10E4,$10E5,$10E6,$10E7,$10E8,$10E9,$10EA,$10EB,$10EC,$10ED,$10EE,$10EF,
      $10F0,$10F1,$10F2,$10F3,$10F4,$10F5,$10F6,$10F7,$10F8,$10F9,$10FA,$0000,$0000,$10FD,$10FE,$10FF,
@@ -276,10 +305,10 @@ const
     ),
     ($2C30,$2C31,$2C32,$2C33,$2C34,$2C35,$2C36,$2C37,$2C38,$2C39,$2C3A,$2C3B,$2C3C,$2C3D,$2C3E,$2C3F,
      $2C40,$2C41,$2C42,$2C43,$2C44,$2C45,$2C46,$2C47,$2C48,$2C49,$2C4A,$2C4B,$2C4C,$2C4D,$2C4E,$2C4F,
-     $2C50,$2C51,$2C52,$2C53,$2C54,$2C55,$2C56,$2C57,$2C58,$2C59,$2C5A,$2C5B,$2C5C,$2C5D,$2C5E,$0000,
+     $2C50,$2C51,$2C52,$2C53,$2C54,$2C55,$2C56,$2C57,$2C58,$2C59,$2C5A,$2C5B,$2C5C,$2C5D,$2C5E,$2C5F,
      $2C00,$2C01,$2C02,$2C03,$2C04,$2C05,$2C06,$2C07,$2C08,$2C09,$2C0A,$2C0B,$2C0C,$2C0D,$2C0E,$2C0F,
      $2C10,$2C11,$2C12,$2C13,$2C14,$2C15,$2C16,$2C17,$2C18,$2C19,$2C1A,$2C1B,$2C1C,$2C1D,$2C1E,$2C1F,
-     $2C20,$2C21,$2C22,$2C23,$2C24,$2C25,$2C26,$2C27,$2C28,$2C29,$2C2A,$2C2B,$2C2C,$2C2D,$2C2E,$0000,
+     $2C20,$2C21,$2C22,$2C23,$2C24,$2C25,$2C26,$2C27,$2C28,$2C29,$2C2A,$2C2B,$2C2C,$2C2D,$2C2E,$2C2F,
      $2C61,$2C60,$026B,$1D7D,$027D,$023A,$023E,$2C68,$2C67,$2C6A,$2C69,$2C6C,$2C6B,$0251,$0271,$0250,
      $0252,$0000,$2C73,$2C72,$0000,$2C76,$2C75,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$023F,$0240,
      $2C81,$2C80,$2C83,$2C82,$2C85,$2C84,$2C87,$2C86,$2C89,$2C88,$2C8B,$2C8A,$2C8D,$2C8C,$2C8F,$2C8E,
@@ -337,10 +366,10 @@ const
      $A791,$A790,$A793,$A792,$A7C4,$0000,$A797,$A796,$A799,$A798,$A79B,$A79A,$A79D,$A79C,$A79F,$A79E,
      $A7A1,$A7A0,$A7A3,$A7A2,$A7A5,$A7A4,$A7A7,$A7A6,$A7A9,$A7A8,$0266,$025C,$0261,$026C,$026A,$0000,
      $029E,$0287,$029D,$AB53,$A7B5,$A7B4,$A7B7,$A7B6,$A7B9,$A7B8,$A7BB,$A7BA,$A7BD,$A7BC,$A7BF,$A7BE,
-     $0000,$0000,$A7C3,$A7C2,$A794,$0282,$1D8E,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,
+     $A7C1,$A7C0,$A7C3,$A7C2,$A794,$0282,$1D8E,$A7C8,$A7C7,$A7CA,$A7C9,$0264,$A7CD,$A7CC,$0000,$0000,
+     $A7D1,$A7D0,$0000,$0000,$0000,$0000,$A7D7,$A7D6,$A7D9,$A7D8,$A7DB,$A7DA,$019B,$0000,$0000,$0000,
      $0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,
-     $0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,
-     $0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000
+     $0000,$0000,$0000,$0000,$0000,$A7F6,$A7F5,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000
     ),
     ($0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,
      $0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,$0000,
@@ -422,7 +451,8 @@ const
 
 {This function uses the page index and the two pairing tables above to perform
  a case insensitive comparison between two unicode strings because the standard System.SysUtils.CompareText
- function only considers the basic ascii characters and not all of the unicode characters that should.}
+ function only considers the basic ascii characters and not all of the unicode characters that it should.}
+
 function CompareTextUnicode(const S1, S2: string): Integer;
 var
   I, Last, L1, L2: cardinal;
